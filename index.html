@@ -41,15 +41,28 @@
       <main role="main">
 
         <div class="jumbotron">
-          <p class="lead">Scrapboxのソート順を色々実験するためのページです。</p>
+          <p class="lead">Scrapboxのソート順を色々実験するためのページです。<a href="https://scrapbox.io/nishio/Scrapbox%E3%81%AE%E3%82%BD%E3%83%BC%E3%83%88%E9%A0%86%E5%BA%8F%E3%82%92%E5%A4%89%E3%81%88%E3%82%8B%E5%AE%9F%E9%A8%93">解説</a></p>
 
-          <label>project-name <input type="text" id="text-project-name" name="project-name" value="nishio"></label>
+          <p>
+            <label>project-name <input type="text" id="text-project-name" name="project-name" value="nishio"></label>
+          </p>
+
+          <p>
+            Scrapboxの仕様でこのページからAPIを直接呼べないので、下記リンクを開いて中身を全部コピーし、その下の白い箱にペーストしてから読み込みボタンを押してください。
+          </p>
+
+          <p>
+            <a href="https://scrapbox.io/api/pages/nishio?limit=10000" target="_blank" id="link-api">API</a>
+          </p>
+          <p>
+            <textarea id="textarea" style="width:100%">
+            </textarea>
+          </p>
           <p><a id="btn-run" class="btn btn-lg btn-success" href="#" role="button"
                 data-loading-text="読み込み中…"
                 data-complete-text="読み込み完了！"
                 data-error-text="エラー"
                 >データ読み込み</a></p>
-
 
           <h4>sorted</h4>
           <ul id="pages" style="text-align: left"></ul>
